@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(169, 231, 231);
+        }
+        
+        button {
+            width: 130px;
+            height: 40px;
+            border-radius: 30%;
+            box-shadow: 10px 10px 10px wheat;
+            background-color: aquamarine;
+            font-size: large;
+        }
+        
+        h1,
+        h3 {
+            font-family: cursive;
+        }
+    </style>
+    <script>
+        function myfunc() {
+            var display = document.getElementsByTagName('h3')
+            let A = prompt("Enter your name")
+            display.value = document.write("Hello " + A + "!! How are you??")
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Click here to say Hi!!</h1>
+    <button onclick="myfunc()">Click</button>
+    <h3></h3>
+</body>
+
+</html>
